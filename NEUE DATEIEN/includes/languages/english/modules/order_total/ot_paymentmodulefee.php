@@ -1,0 +1,3 @@
+<?php
+define('MODULE_ORDER_TOTAL_PAYMENTMODULEFEE_TITLE', 'Payment Module Fee');
+define('MODULE_ORDER_TOTAL_PAYMENTMODULEFEE_DESCRIPTION', 'Payment Module Fee');

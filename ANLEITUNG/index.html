@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Rabatt für Zahlungsart 1.4 für Zen-Cart 1.5.6 deutsch</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="de">
+<meta name="description" content="Modul zur Einrichtung eines Rabatts für die ausgewählte Zahlungsart in der deutschen Zen-Cart Version">
+<link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
+<script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1>Rabatt für Zahlungsart 1.4 für Zen-Cart 1.5.6 deutsch</h1>
+</div>
+
+<div id="slidetabsmenu" style="display: none;">
+<ul>
+  <li> <a onClick="expandcontent('sc1', this)" href="javascript:void(0)"><span>Sinn und Zweck</span></a></li>
+  <li> <a onClick="expandcontent('sc2', this)" href="javascript:void(0)"><span>Installation</span></a></li>
+     <li> <a onClick="expandcontent('sc5', this)" href="javascript:void(0)"><span>Download & Support</span></a></li>
+  <li> <a onClick="expandcontent('sc6', this)" href="javascript:void(0)"><span>Unterstützen</span></a></li>
+ </ul>
+</div>
+<br style="clear: both;">
+
+<!--Begin tabcontainer-->
+<div id="tabcontentcontainer">
+
+<!--Begin sc1-->
+<div class="tabcontent" id="sc1" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Sinn und Zweck dieses Moduls</h2>
+
+  <p>Mit diesem Modul kann für bestimmte Zahlungsarten ein Rabatt gegeben werden (prozentuell oder Fixbetrag)<br>
+    <strong>Vor dem Einsatz dieses Moduls die neuen rechtlichen Vorschriften seit 13.01.2018 beachten:<br/>
+    <a href="http://www.it-recht-kanzlei.de/zahlungsarten-gebuehren-ermaessigungen-anzreizsysteme.html" target="_blank">http://www.it-recht-kanzlei.de/zahlungsarten-gebuehren-ermaessigungen-anzreizsysteme.html </a></strong><br/><br/>
+  <strong>Das Modul kann theoretisch auch Gebühren für Zahlungsarten verrechnen, diese sind seit Mitte Januar 2018 NICHT mehr erlaubt! </strong></p>
+  
+<h3>Copyright, Changelog, Lizenz</h3>
+<p>Copyright dieser deutschen Anpassung/Anleitung für Zen-Cart 1.5.6 deutsch<br>
+(c) 2016-2019 webchills (<a href="http://www.webchills.at" target="_blank">www.webchills.at</a>)<br>
+<br>
+Modifikation des Moduls Payment Module Fee
+by Numinix (<a href="http://www.numinix.com" target="_blank">http://www.numinix.com</a>)<br/><br/>
+Changelog Version 1.4<br/>
+2019-08-10<br/>
+Anpassungen für PHP 7.3<br>
+Unnötige Javascriptaufrufe entfernt
+<br>
+<br>
+Changelog Version 1.3<br/>
+2018-04-10<br/>
+Anpassungen für PHP 7.1<br/>
+Anleitung aktualisiert
+</p>
+<p> Portions Copyright (c) 2003 osCommerce<br>
+  Portions Copyright     (c) 2003-2019 Zen Cart</p>
+<p>This contribution is subject to version 3.0 of the GPL license available through the world-wide-web at the following url:<br>
+  <a href="http://www.zen-cart-pro.at/license/3_0.txt">http://www.zen-cart-pro.at/license/3_0.txt</a></p>
+</div>
+</div>
+</div>
+<!--End sc1-->
+
+<!--Begin sc2-->
+<div class="tabcontent" id="sc2" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Installation</h2>
+<h3>Voraussetzungen</h3>
+  <br>
+  Dieses Modul ist<strong> nur für die deutsche Zen-Cart Version 1.5.6 geeignet</strong></p>
+  
+  <p><br>
+  <strong>Empfehlung:</strong><br>
+  <br>
+  Dieses Modul erst in einem Testsystem einbauen und dort   konfigurieren/testen und endgültig an die eigenen Wünsche anpassen.        Erst dann in einem Liveshop einsetzen! Sichern Sie unbedingt alle   Dateien Ihres Shops per FTP und sichern Sie die Datenbank mit phpMyAdmin   oder anderen geeigneten Tools!</p>
+<div id="warning"><b>WICHTIG</b><br>
+Vor dem Einbau dieser Änderungen:<br>
+BACKUP von Shop und Datenbank machen! <br>
+Keine Haftung, Verwendung auf eigene Gefahr!<br>
+BACKUP gemacht? Ok, dann weiterlesen...
+</div>
+<p>Die Installation erfolgt in folgenden Schritten. Halten Sie diesen Ablauf ein!</p>
+<p>1)<br>
+  Im Ordner NEUEDATEIEN dieses Downloads den Ordner includes/templates/DEINTEMPLATE auf den Namen des im Shop aktiven Templates umbenennen (z.B. responsive_classic)</p>
+<p>2)<br>
+  Dann alle Ordner und Dateien im Ordner NEUEDATEIEN in der vorgegebenen Struktur ins Zen-Cart Verzeichnis hochladen. Dabei werden keine bestehenden Dateien überschrieben</p>
+<p>3) <br>
+  In der Zen-Cart Administration unter Module &gt; Zusammenfassung das Modul &quot;Rabatt für Zahlungsart&quot; aktivieren.<br>
+  Alle Einstellungsmöglichkeiten sind dort erklärt.</p>
+<p>4) Konfiguration</p>
+<p>Das Zahlungsmodul wird immer mit exakt dem Code angegeben, der unter Module &gt; Zahlungsarten aufscheint<br>
+  Rabatte immer mit - angeben<br>
+  Mehrere Arten durch Komma (,) trennen</p>
+<p>Beispiele:<br>
+  Unterschiedliche prozentuelle Rabatte für mehrere Zahlungsarten:</p>
+<p>Rabatt für PayPal Express: -3%<br>
+  Rabatt für Vorkasse/Banküberweisung: -10%</p>
+<p>Einstellung:</p>
+<p>Rabatt oder Gebühr<br>
+  -3%,-10%</p>
+<p>Zahlungsarten für Rabatt oder Gebühr<br>
+  paypalwpp,eustandardtransfer<br>
+</p>
+<p>Beispiel:<br>
+  prozentueller Rabatt für eine Zahlungsart:</p>
+<p>Rabatt für Vorkasse/Banküberweisung: -3%</p>
+<p>Einstellung:</p>
+<p>Rabatt<br>
+  -3%</p>
+<p>Zahlungsarten für Rabatt<br>
+  eustandardtransfer<br>
+</p>
+<p>Beispiel:<br>
+  Rabatt mit Fixbetrag von 3 Euro bei Zahlungsart Banküberweisung:</p>
+<p>Einstellung:<br>
+  <br>
+  Rabatt:<br>
+  -3<br>
+  <br>
+  Zahlungsarten für Rabatt:<br>
+  eustandardtransfer<br>
+</p>
+<p>Hinweis:<br>
+  Der Text &quot;Rabatt für Zahlungsart&quot; kann in includes/languages/german/modules/ot_total/ot_paymentmodulefee.php angepasst werden</p>
+</div>
+</div>
+</div>
+
+<!--End sc2-->
+
+
+
+<!--Begin sc5-->
+<div class="tabcontent" id="sc5" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h2>Download &amp; Support</h2>
+<p>Download des Moduls:</p>
+<p><a href="https://www.zen-cart-pro.at/forum/vbdownloads.php?categoryid=16" target="_blank">www.zen-cart-pro.at/forum/vbdownloads.php?categoryid=16</a></p>
+
+<p>Supportforum zum Modul:</p>
+<p><a href="https://www.zen-cart-pro.at/forum/forums/137-Rabatt-f%C3%BCr-Zahlungsart" target="_blank">www.zen-cart-pro.at/forum/forums/137-Rabatt-f%C3%BCr-Zahlungsart</a></p>
+</div>
+</div>
+</div>
+<!--End sc5-->
+
+<!--Begin sc6-->
+<div class="tabcontent" id="sc6" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Unterstützen</h2>
+<p>Sie finden dieses Modul nützlich?</p>
+<p><a href="https://donorbox.org/spende-fur-die-weiterentwicklung-der-deutschen-zen-cart-version" target="_blank"><img src="https://www.zen-cart-pro.at/zencartpro-donation-white.png" alt="Spende für die Weiterentwicklung der deutschen Zen Cart Version" title="Spende für die Weiterentwicklung der deutschen Zen Cart Version"></a></p>
+
+<br/><br/>
+<p>Du bist Entwickler und willst helfen, die deutsche Zen Cart Version noch besser zu machen?<br>
+  Beteilige Dich auf Github:<br>
+  <a href="https://github.com/zencartpro" target="_blank"><strong>https://github.com/zencartpro</strong></a></p>
+<br/><br/>
+</div>
+</div>
+</div>
+<!--End sc6-->
+</div>
+<div id="footer">
+Ein Modul von <a href="https://www.zen-cart-pro.at" target="_blank">www.zen-cart-pro.at</a> - Die deutsche Zen-Cart Version
+</div>
+</div>
+<!--end tabcontainer-->
+<script type="text/javascript">document.getElementById('sc1').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc2').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc5').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc6').style.display = 'none';</script>
+<script type="text/javascript">ShowTabs()</script>
+<script type="text/javascript">
+// We only show the tab links if JavaScript is available/active.
+<!--
+if (document.getElementById("slidetabsmenu") != null) {
+  document.getElementById('slidetabsmenu').style.display = "block";
+}
+//-->
+</script>
+
+</body></html>
